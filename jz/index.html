@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Visitas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color:black;
+      position: relative;
+    }
+
+    .cartao {
+      width: 500px;
+      height: 300px;
+      background: linear-gradient(135deg, #253245 50%, #262322 50%);
+      border-radius: 10px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
+
+    /* Linha diagonal */
+    .cartao::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.2) 50%);
+      z-index: 1;
+    }
+
+    header {
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    main {
+      flex-grow: 1;
+      z-index: 2;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      z-index: 2;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;  
+      width: 80px;   
+      height: 80px;  
+      background: white;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid white;
+      z-index: 2;
+    }
+
+    footer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="cartao">
+
+
+    <header>
+
+
+      <h1>José Luis da Silva Baltazar</h1>
+      <p> Faço jiu-jitsu<br> jogo vôlei e futsal</p>
+
+
+    </header>
+
+    <main>
+
+
+      <p>Técnico em Informática - IFCE</p>
+      <p>Futuro Policial Militar</p>
+
+
+    </main>
+
+    <div class="social-icons">
+      
+                    <a href="https://wa.me/5585997534281" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:luis.jose09@aluno.ifce.edu.br" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_jose.jz/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+    </div>
+
+    <footer>
+
+
+      <img src="JZ.jpeg" alt="Foto do Perfil">
+
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
